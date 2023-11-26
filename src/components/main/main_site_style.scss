@@ -1,0 +1,41 @@
+.main-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .central-block {
+    width: 20em;
+    text-align: center;
+
+      .my-photo {
+        margin: 4em 2em;
+        width: 15em;
+      }
+
+      p {
+        font-size: 1.5em;
+      };
+  }
+}
+
+// @media (max-width: 767px) {
+  
+//   .main-container {
+
+
+//     .central-block {
+//       width: 10em;
+  
+//       .my-photo {
+//         margin: 0.5em;
+//         width: 10em;
+//       }
+
+//       p {
+//         font-size: 1em;
+//       }
+//     }
+//   }
+// }
