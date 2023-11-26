@@ -85,7 +85,7 @@ export function ContactComponent() {
           </div>
       </div>
       ) : (
-<div className="contact-container">
+      <div className="contact-container">
         <div className="left">
           <div className="icon-container">
             <a href="mailto:hanna.oleinikova@gmail.com"><img src="/contact/mail_icon.png" alt="Mail icon"/></a>
