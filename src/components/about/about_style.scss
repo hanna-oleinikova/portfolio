@@ -68,6 +68,12 @@
         font-size: 1.5em;
       }
     }
+
+    .letter-pages {
+      .page {
+        width: 150px;
+      }
+    }
   }
 }
 
@@ -76,13 +82,13 @@
     .about-text {
       text-align: left;
       p {
-        font-size: 1.2em;
+        font-size: 1em;
       }
     }
 
     .letter-pages {
       .page {
-        width: 150px;
+        width: 100px;
       }
     }
   }
