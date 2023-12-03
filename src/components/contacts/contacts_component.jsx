@@ -64,7 +64,7 @@ export function ContactComponent() {
             </div>
             
             <div className="icon-container">
-              <a href=""><img src="/contact/post_icon.png" alt="Post icon"/></a>
+              <a href="14480 Potsdam Deutschland"><img src="/contact/post_icon.png" alt="Post icon"/></a>
               <div className="data-text" data-text="You can also send me a nice card"></div>
             </div>
 
@@ -79,7 +79,7 @@ export function ContactComponent() {
             </div>
             
             <div className="icon-container">
-              <a href=""><img src="/contact/linkedin_icon.png" alt="Linkedin icon"/></a>
+              <a href="www.linkedin.com/in/hanna-oleinikova-389727298" target="_blank" rel="noreferrer"><img src="/contact/linkedin_icon.png" alt="Linkedin icon"/></a>
               <div className="data-text" data-text="I believe that someday there will be many projects here"></div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export function ContactComponent() {
           </div>
                     
           <div className="icon-container">
-            <a href=""><img src="/contact/post_icon.png" alt="Post icon"/></a>            
+            <a href="14480 Potsdam Deutschland"><img src="/contact/post_icon.png" alt="Post icon"/></a>            
             <div className="data-text" data-text="You can also send me a nice card"></div>  
           </div>
         </div>
@@ -115,7 +115,7 @@ export function ContactComponent() {
           </div>
                     
           <div className="icon-container">
-            <a href=""><img src="/contact/linkedin_icon.png" alt="Linkedin icon"/></a>
+          <a href="https://www.linkedin.com/in/hanna-oleinikova-389727298" target="_blank" rel="noreferrer"><img src="/contact/linkedin_icon.png" alt="Linkedin icon"/></a>
             <div className="data-text" data-text="I believe that someday there will be many projects here"></div>
           </div>
         </div>
