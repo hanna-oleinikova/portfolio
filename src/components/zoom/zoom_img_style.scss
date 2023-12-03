@@ -1,0 +1,14 @@
+.image-container {
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-container.zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  transform: translate(-50%, -50%) scale(2.8);
+  z-index: 1000;
+}
