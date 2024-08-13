@@ -9,7 +9,17 @@ export function ProjectsComponent() {
       <Navigation />
       <div className="project-container">
        
-       
+      <div className="project-box-3">
+          <a  href="https://store-ten-kohl.vercel.app/" 
+              target="_blank" 
+              rel="noreferrer">
+            <img  className="project-screen-store" 
+                  src="/projects/store_screen.png" 
+                  alt="Printscreen of project 'Store'"/>
+          </a>
+          <p className="project-text">Project <span>Store</span> is still under development. You can get acquainted with the project. The "favorites" and "shopping cart" sections are not ready yet 🙃 </p>
+        </div>   
+
         
         <div className="project-box-2">
           <a  href="https://countries-github-io.vercel.app" 
