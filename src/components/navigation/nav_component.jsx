@@ -32,7 +32,7 @@ export function Navigation() {
                 right="2em" 
                 isActiveStyle={isActive("/projects") ? activeStyle : {}}/>
         <Button to={"/certificates"}
-                text="Certificates" 
+                text="Documents" 
                 position="fixed" 
                 right="2em"
                 bottom="2em" 

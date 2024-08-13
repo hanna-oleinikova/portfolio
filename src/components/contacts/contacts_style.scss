@@ -1,16 +1,16 @@
 .contact-container {
   width: 90%;
   margin: 0 auto;
-  padding-top: 15em;
   display: flex;
-  
+  padding: 100px 0;
 
-  .left, .right {
+  .left,
+  .right {
     width: 50%;
   }
 
   img {
-    margin-right: 2em;
+    margin-right: 30px;
   }
 
   .icon-container {
@@ -19,15 +19,13 @@
     margin: 40px;
 
     .data-text {
-      font-size: 1.5em;
+      font-size: 25px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .contact-container {
-    padding-top: 10em;
-
     img {
       width: 100px;
     }
@@ -37,4 +35,3 @@
     }
   }
 }
-
