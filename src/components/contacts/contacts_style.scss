@@ -1,8 +1,9 @@
 .contact-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  padding: 100px 0;
+  align-items: center;
+  padding: 10em 0;
 
   .left,
   .right {
@@ -11,27 +12,35 @@
 
   img {
     margin-right: 30px;
+    width: 100px;
   }
 
   .icon-container {
     display: flex;
     align-items: center;
-    margin: 40px;
+    margin: 40px 40px 0;
 
     .data-text {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .contact-container {
-    img {
-      width: 100px;
-    }
+    flex-direction: column;
 
-    .data-text {
-      font-size: 1em;
+    .left,
+    .right {
+      width: 100%;
+
+      img {
+        width: 70px;
+      }
+
+      .data-text {
+        font-size: 18px;
+      }
     }
   }
 }

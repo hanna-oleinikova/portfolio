@@ -5,88 +5,42 @@
   flex-direction: column;
   align-items: center;
 
-  .project-box-3 {
+  .project-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .project-screen-store {
+    .project-screen-gorizont {
       width: 900px;
       margin-bottom: 2em;
     }
 
-    .project-text {
-      width: 900px;
-      margin-bottom: 10em;
-      font-size: 1.5em;
-    }
-  }
-
-  .project-box-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .project-screen-countries {
+    .project-screen-vertikal {
       width: 450px;
       margin-bottom: 2em;
     }
 
     .project-text {
-      margin-bottom: 10em;
-      font-size: 1.5em;
-    }
-  }
-
-  .project-box-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .project-screen-zuhause {
-      width: 900px;
-      margin-bottom: 2em;
-    }
-
-    .project-text {
       width: 900px;
       margin-bottom: 10em;
       font-size: 1.5em;
     }
-  }
 
-  span {
-    font-weight: bold;
+    span {
+      font-weight: bold;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .project-container {
-    .project-box-1 {
-      .project-screen-zuhause {
+    .project-box {
+      .project-screen-gorizont {
         width: 400px;
       }
 
-      .project-text {
-        width: 400px;
-        text-align: center;
-      }
-    }
-
-    .project-box-2 {
-      .project-screen-countries {
+      .project-screen-vertikal {
         width: 250px;
-      }
-
-      .project-text {
-        width: 400px;
-        text-align: center;
-      }
-    }
-
-    .project-box-3 {
-      .project-screen-store {
-        width: 400px;
       }
 
       .project-text {
@@ -99,19 +53,12 @@
 
 @media (min-width: 767px) and (max-width: 1023px) {
   .project-container {
-    .project-box-1 {
-      .project-screen-zuhause {
+    .project-box {
+      .project-screen-gorizont {
         width: 700px;
       }
 
-      .project-text {
-        width: 700px;
-        text-align: center;
-      }
-    }
-
-    .project-box-2 {
-      .project-screen-countries {
+      .project-screen-vertikal {
         width: 400px;
       }
 

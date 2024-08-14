@@ -12,7 +12,9 @@ export function Navigation() {
 
   return(
     <>
-      <Button to={"/about"} 
+        <div className='top-background'></div>
+        {/* <div className='bottom-background'></div> */}
+        <Button to={"/about"} 
                 text="About me" 
                 position="fixed" 
                 left="2em" 

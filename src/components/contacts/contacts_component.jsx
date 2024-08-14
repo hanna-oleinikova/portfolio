@@ -1,26 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./contacts_style.scss";
 import { Navigation } from "../navigation/nav_component";
 
-
 export function ContactComponent() {
-  const [mobileView, setMobileView] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const isMobileView = window.innerWidth < 768;
-      setMobileView(isMobileView);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   useEffect(() => {
     const contactIcons = document.querySelectorAll(".icon-container");
 
@@ -50,77 +32,31 @@ export function ContactComponent() {
     <>
       <Navigation />
 
-      {mobileView ? (
-        <div className="contact-container">
-          <div className="blocks">
-            <div className="icon-container">
-              <a href="mailto:hanna.oleinikova@gmail.com"><img src="/contact/mail_icon.png" alt="Email icon"/></a>
-              <div className="data-text" data-text="You can write to me how much you liked my project"></div>
-            </div>
-            
-            <div className="icon-container">
-              <a href="tel:+1234567890"><img src="/contact/phone_icon.png" alt="Phone icon"/></a>
-              <div className="data-text" data-text="This is not true, I will not answer 24/7"></div>
-            </div>
-            
-            <div className="icon-container">
-              <a href="14480 Potsdam Deutschland"><img src="/contact/post_icon.png" alt="Post icon"/></a>
-              <div className="data-text" data-text="You can also send me a nice card"></div>
-            </div>
-
-            <div className="icon-container">
-              <a href=""><img src="/contact/whatsapp_icon.png" alt="Whatsapp icon"/></a>
-              <div className="data-text" data-text="And you can really write here 24/7"></div>
-            </div>
-            
-            <div className="icon-container">
-              <a href=""><img src="/contact/instagram_icon.png" alt="Instagram icon"/></a>
-              <div className="data-text" data-text="Ups... My account is private"></div>
-            </div>
-            
-            <div className="icon-container">
-              <a href="www.linkedin.com/in/hanna-oleinikova-389727298" target="_blank" rel="noreferrer"><img src="/contact/linkedin_icon.png" alt="Linkedin icon"/></a>
-              <div className="data-text" data-text="I believe that someday there will be many projects here"></div>
-            </div>
-          </div>
-      </div>
-      ) : (
       <div className="contact-container">
         <div className="left">
           <div className="icon-container">
-            <a href="mailto:hanna.oleinikova@gmail.com"><img src="/contact/mail_icon.png" alt="Mail icon"/></a>
-            <div className="data-text" data-text="You can write to me how much you liked my project"></div>
-          </div>
-          
-          <div className="icon-container">
-            <a href="tel:+1234567890"><img src="/contact/phone_icon.png" alt="Phone icon"/></a>
-            <div className="data-text" data-text="This is not true, I will not answer 24/7"></div>
+            <a href="mailto:hanna.oleinikova@gmail.com"><img src="/contact/mail_icon.png" alt="E-Mail icon"/></a>
+            <div className="data-text" data-text="I respond promptly to email inquiries"></div>
           </div>
                     
           <div className="icon-container">
-            <a href="14480 Potsdam Deutschland"><img src="/contact/post_icon.png" alt="Post icon"/></a>            
-            <div className="data-text" data-text="You can also send me a nice card"></div>  
+            <a href="https://www.google.com/maps/place/14480+Potsdam,+Germany" target="_blank" rel="noreferrer"><img src="/contact/post_icon.png" alt="Post icon"/></a>            
+            <div className="data-text" data-text="My habitat. Comfort zone is within a radius of 25-30 km 😁"></div>  
           </div>
         </div>
         
-        <div className="right">
+        <div className="right">  
           <div className="icon-container">
-            <a href=""><img src="/contact/whatsapp_icon.png" alt="Whatsapp icon"/></a>
-            <div className="data-text" data-text="And you can really write here 24/7"></div>
-          </div>
-                    
-          <div className="icon-container">
-            <a href=""><img src="/contact/instagram_icon.png" alt="Instagram icon"/></a>
-            <div className="data-text" data-text="Ups... My account is private"></div>
+            <a href="https://github.com/hanna-oleinikova" target="_blank" rel="noreferrer"><img src="/contact/github_icon.png" alt="GitHub icon"/></a>
+            <div className="data-text" data-text="Feel free to come in, you can keep your shoes on 🙂"></div>
           </div>
                     
           <div className="icon-container">
           <a href="https://www.linkedin.com/in/hanna-oleinikova-389727298" target="_blank" rel="noreferrer"><img src="/contact/linkedin_icon.png" alt="Linkedin icon"/></a>
-            <div className="data-text" data-text="I believe that someday there will be many projects here"></div>
+            <div className="data-text" data-text="Hier always open... to new opportunities and embrace professional challenges"></div>
           </div>
         </div>
       </div>
-      )}
     </>
   )
 }
