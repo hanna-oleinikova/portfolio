@@ -1,8 +1,8 @@
-import { Navigation } from "../navigation/nav_component.jsx";
 import { Link } from 'react-router-dom';
-import "./about_style.scss";
 import { useState } from "react";
+import "./about_style.scss";
 import { Button } from "../buttons/button_component.jsx";
+import { Navigation } from "../navigation/nav_component.jsx";
 
 export function AboutComponent() {
   const [language, setLanguage] = useState('eng')
@@ -37,14 +37,6 @@ export function AboutComponent() {
           onClick={() => handleLanguageChange('de')} 
           isActiveStyle={language === 'de' ? activeStyle : {}} 
         />
-
-        {/* <button 
-          className="language-button" 
-          onClick={() => handleLanguageChange('eng')} 
-          style={language === 'eng' ? activeStyle : {}}>English</button>
-           
-          <button className="language-button" onClick={() => handleLanguageChange('de')}>Deutsch</button> */}
-
 
         </div>
         {language === 'eng' ?
