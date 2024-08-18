@@ -32,14 +32,14 @@ export function ProjectsComponent() {
         </div>   
  
         <div className="project-box">
-          <a  href="https://countries-github-io.vercel.app" 
+          <a  href="https://countries-ten-zeta.vercel.app/" 
               target="_blank" 
               rel="noreferrer">
             <img  className="project-screen-vertikal" 
-                  src="/projects/countries_bild.jpg" 
+                  src="/projects/countries_bild.png" 
                   alt="Printscreen of project 'Countries'"/>
           </a>
-          <p className="project-text">Project <span>Countries</span>, created with React Vite using a public APIs.</p>
+          <p className="project-text-vertikal">Project <span>Countries</span>, created with React Vite using a public APIs.</p>
         </div>   
 
         <div className="project-box">
